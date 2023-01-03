@@ -14,17 +14,16 @@ class Calling extends Greet{
     AI Ans = new AI();    
     public void Question(){
         Scanner Question = new Scanner(System.in);
-        String Ques = " ";
+        String Ques = "";
         while(Ques != "Exit"){
             System.out.print("Me:");
             Ques = Question.nextLine();        
-            if(Ques == " "){
+            if(Ques == ""){
                 Ans.Answer("Nothing I Am Exit");
                 Ques = "Exit";
             }
-            else if(Ques!= " "){
+            else if(Ques!= ""){
                 String[] arr =  Ques.split(" ", 5);
-                // str.split("s", 0);
                 for(String a : arr){
                     System.out.println("AI:"+a);
                 }
