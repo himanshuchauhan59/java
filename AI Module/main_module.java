@@ -6,27 +6,16 @@ class Greet{
         }
 }
 class Calling extends Greet{
-    public void Answer(String Text){
-        System.out.println(Text);
-    }
+    
+    
     public void Question(){
+        greetingUser greets = new greetingUser();
         Scanner Question = new Scanner(System.in);
         String Ques = "";
         while(!Ques.equals("Exit")){
             System.out.print("Me:");
             Ques = Question.nextLine();        
-            if(Ques.equals("")){
-                Answer("Nothing I Am Exit");
-                Ques = "Exit";
-            }
-            else if(!Ques.equals("")){
-                String[] arr =  Ques.split(" "); 
-                    for(String s : arr){
-                        if(s.equals("name")){
-                            System.out.println("hello "+arr[arr.length-1]);
-                        }
-                    }
-            }
+            greets.greet(Ques);
         }
     }
 }
