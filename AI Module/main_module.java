@@ -31,13 +31,17 @@ class Calling extends Greet{
                     for(int start = 0; start <= greetings_words.length-1; start++)
                     {
                         if(arr[0].equals(greetings_words[start])){
-                        System.out.println("AI:"+arr[0]+" ");    
-                        break;
-                        }
-                        else if(!arr[0].equals(greetings_words[start]))
-                        {
-                                        
-                        }
+                            System.out.println("AI:"+arr[0]+" ");    
+                            break;
+                        }                        
+                    }
+                    String[] greetings_words_2 = {"How Are You"};
+                    for(int start = 0; start <= greetings_words_2.length-1; start++)
+                    {
+                        if(arr[start].equals(greetings_words_2[start])){
+                                System.out.println("AI: I am Fine");    
+                                break;
+                        }                        
                     }
                 }   
             
