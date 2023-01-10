@@ -27,7 +27,7 @@ class Calling extends Greet{
                             System.out.println("AI:hello "+arr[arr.length-1]);
                         }
                     } 
-                    String[] greetings_words = {"Hi" , "hello" , "hi" , "hello" , "hey" , "Hey"};
+                    String[] greetings_words = {"Hi" , "Hello" , "hi" , "hello" , "hey" , "Hey"};
                     for(int start = 0; start <= greetings_words.length-1; start++)
                     {
                         if(arr[0].equals(greetings_words[start])){
